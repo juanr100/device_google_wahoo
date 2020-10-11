@@ -780,17 +780,28 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.vulkan=adreno \
     ro.oem_unlock.pst=/dev/block/platform/soc/1da4000.ufshc/by-name/misc \
     ro.oem_unlock.pst_offset=6144
+
+# Build necessary packages for system
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder \
+    libmediaplayerservice:32 \
+    libstagefright_httplive:32
     
 # Build necessary packages for vendor
 PRODUCT_PACKAGES += \
+    chre \
     ese-ls-provision \
     ese-replay \
+    libdrm.vendor \
     libhidltransport.vendor \
     libhwbinder.vendor \
     libjson \
     librmnetctl:64 \
     libsensorndkbridge:32 \
-    libtinyxml
+    libtinycompress \
+    libtinyxml \
+    libwifi-hal:64
     
 # MiFare Permissions file
 PRODUCT_COPY_FILES += \
