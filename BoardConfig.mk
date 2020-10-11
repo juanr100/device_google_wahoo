@@ -85,6 +85,9 @@ BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 
 TARGET_COPY_OUT_VENDOR := vendor
 
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_PARTITION_SIZE := 524288000
+
 # Install odex files into the other system image
 BOARD_USES_SYSTEM_OTHER_ODEX := true
 
@@ -183,4 +186,5 @@ AB_OTA_PARTITIONS += \
     boot \
     system \
     vbmeta \
-    dtbo
+    dtbo \
+    vendor
