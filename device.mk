@@ -790,3 +790,8 @@ PRODUCT_PACKAGES += \
     librmnetctl:64 \
     libsensorndkbridge:32 \
     libtinyxml
+    
+# MiFare Permissions file
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
+
