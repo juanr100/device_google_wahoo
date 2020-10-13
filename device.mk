@@ -766,7 +766,11 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
-    
+
+# Native video calling
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.vt_avail_ovr=1
+       
 # Enable missing props
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true
