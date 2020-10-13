@@ -781,6 +781,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.mediadrmservice.enable=true \
     ro.gfx.driver.0=com.google.pixel.wahoo.gfxdrv \
     ro.hardware.egl=adreno \
+    ro.storage_manager.enabled=true \
     ro.hardware.vulkan=adreno \
     ro.oem_unlock.pst=/dev/block/platform/soc/1da4000.ufshc/by-name/misc \
     ro.oem_unlock.pst_offset=6144
